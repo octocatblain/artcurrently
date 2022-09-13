@@ -117,16 +117,18 @@
           <!-- End of Contact Card -->
         </div>
       </div>
+
       <div class="row">
         <div class="col-12 text-center mb-5">
           <h2>Our Team</h2>
         </div>
+
         <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
           <div class="card border-0 text-center">
             <div class="card-header border-0 bg-white">
               <img
                 src="/static/assets/img/team/profile-picture-3.jpg"
-                class="card-img-top rounded shadow border-0"
+                class="card-img-top rounded-circle border-primary"
                 alt="Christopher Avatar"
               />
             </div>
@@ -144,6 +146,16 @@
                     <span class="fab fa-twitter"></span>
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="instagram social link"
+                    class="icon-twitter me-3"
+                  >
+                    <span class="fab fa-instagram"></span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -153,7 +165,7 @@
             <div class="card-header border-0 bg-white">
               <img
                 src="/static/assets/img/team/profile-picture-1.jpg"
-                class="card-img-top rounded shadow border-0"
+                class="card-img-top rounded-circle border-primary"
                 alt="Bonnie Avatar"
               />
             </div>
@@ -173,6 +185,16 @@
                     <span class="fab fa-twitter"></span>
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="instagram social link"
+                    class="icon-twitter me-3"
+                  >
+                    <span class="fab fa-instagram"></span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -182,7 +204,7 @@
             <div class="card-header border-0 bg-white">
               <img
                 src="/static/assets/img/team/profile-picture-4.jpg"
-                class="card-img-top rounded shadow border-0"
+                class="card-img-top rounded-circle border-primary"
                 alt="Neil Avatar"
               />
             </div>
@@ -194,20 +216,20 @@
                   <a
                     href="#"
                     target="_blank"
-                    aria-label="facebook social link"
-                    class="icon icon-sm icon-facebook me-3"
+                    aria-label="twitter social link"
+                    class="icon icon-sm icon-twitter me-3"
                   >
-                    <span class="fab fa-facebook-f"></span>
+                    <span class="fab fa-twitter"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     target="_blank"
-                    aria-label="twitter social link"
-                    class="icon icon-sm icon-twitter me-3"
+                    aria-label="instagram social link"
+                    class="icon-twitter me-3"
                   >
-                    <span class="fab fa-twitter"></span>
+                    <span class="fab fa-instagram"></span>
                   </a>
                 </li>
               </ul>
@@ -223,4 +245,5 @@
 {% include 'includes/footer.html' %} {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
-{% block javascripts %} window.location.reload(); {% endblock javascripts %}
+{% block javascripts %} <scripts> window.location.reload();</scripts> {%
+endblock javascripts %}

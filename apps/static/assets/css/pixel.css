@@ -11375,7 +11375,7 @@ fieldset:disabled .btn {
 }
 
 .bg-black {
-  background-color: #171f38 !important;
+  background-color: #000000 !important;
 }
 
 .bg-purple {
@@ -24633,7 +24633,7 @@ label {
 }
 
 .progress-info .bg-black::after {
-  border-top-color: #171f38;
+  border-top-color: #000000;
 }
 
 .progress-info .bg-purple::after {

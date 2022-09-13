@@ -1,197 +1,226 @@
-{% extends "layouts/base.html" %}
-
-{% block title %} Contact Us {% endblock %} 
+{% extends "layouts/base.html" %} {% block title %} Contact Us {% endblock %}
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}{% endblock stylesheets %} {% block content %}
 
-{% block content %}
+<main>
+  {% include 'includes/preloader.html' %}
 
-    <main>
-        
-        {% include 'includes/preloader.html' %}
-
-        <!-- Hero -->
-        <section class="section section-header pb-11 bg-primary text-white">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-xl-8 text-center">
-                        <h1 class="display-2 mb-3">Get in touch today</h1>
-                        <p class="lead">We are always looking for New stories and feedback. If you are interested in writing for Art Currently, or for any other inquiries, give us a shout at contact.artcurrently@gmail.com.</p>        
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section -->
-        <div class="section py-0">
-            <div class="container mt-n10">
-                <div class="row">
-                    <div class="col-12">
-                        <iframe class="map rounded" id="gmap_canvas" src="https://maps.google.com/maps?q=san%20francisco&t=&z=8&ie=UTF8&iwloc=&output=embed"></iframe>
-                    </div>
-                </div>
-            </div>
+  <!-- Hero -->
+  <section class="section section-header pb-11 bg-primary text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-8 text-center">
+          <h1 class="display-2 mb-3">Get in Touch.</h1>
+          <p class="lead">
+            We are always looking for New stories and feedback. If you are
+            interested in writing for <strong>Art Currently</strong>, or for any
+            other inquiries, give us a shout at
+            <a href="mailto:contact.artcurrently@gmail.com"
+              >contact.artcurrently@gmail.com</a
+            >.
+          </p>
         </div>
-        
-        <!-- Section -->
-        <section class="section section-lg pt-6">
-            <div class="container">
-                <div class="row justify-content-center mb-5 mb-lg-6">
-                    <div class="col-12 col-lg-8">
-                        <!-- Contact Card -->
-                        <div class="card border-0 p-2 p-md-3 p-lg-5">
-                            <div class="card-header bg-white border-0 text-center">
-                                <h2>Want to work with us?</h2>
-                                <p>Cool! Let’s talk about your project</p>
-                            </div>
-                            <div class="card-body px-0 pt-0">
-                                <form action="#">
-                                    <!-- Form -->
-                                    <div class="mb-4">
-                                        <label for="name">Your Name</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text" id="basic-addon3"><span class="fas fa-user-circle"></span></span>
-                                            <input type="text" class="form-control" placeholder="e.g. Bonnie Green" id="name" required>
-                                        </div>
-                                    </div>
-                                    <!-- End of Form -->
-                                    <!-- Form -->
-                                    <div class="mb-4">
-                                        <label for="email">Your Email</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text" id="basic-addon4"><span class="fas fa-envelope"></span></span>
-                                            <input type="email" class="form-control" placeholder="example@company.com" id="email" required>
-                                        </div>
-                                    </div>
-                                    <!-- End of Form -->
-                                    <div class="mb-4">
-                                        <label for="message">Your Message</label>
-                                        <textarea placeholder="Your message" class="form-control" id="message" rows="4" required></textarea>
-                                    </div>
-                                    <!-- End of Form -->
-                                    <div class="d-grid">
-                                        <button type="submit" class="btn rounded btn-secondary">Send message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- End of Contact Card -->
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center mb-5">
-                        <h2>Our support team</h2>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="card border-0 text-center">
-                            <div class="card-header border-0 bg-white">
-                                <img src="/static/assets/img/team/profile-picture-2.jpg" class="card-img-top rounded shadow border-0" alt="Christopher Avatar">
-                            </div>
-                            <div class="card-body">
-                                <span class="card-subtitle text-gray fw-normal">Sales</span>
-                                <h3 class="h4 card-title mt-2">Christopher Wood</h3>
-                                <ul class="list-unstyled d-flex justify-content-center mt-3">
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-sm icon-facebook me-3">
-                                            <span class="fab fa-facebook-f"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-sm icon-twitter me-3">
-                                            <span class="fab fa-twitter"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="slack social link" class="icon icon-sm icon-slack me-3">
-                                            <span class="fab fa-slack-hash"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-sm icon-dribbble me-3">
-                                            <span class="fab fa-dribbble"></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="card border-0 text-center">
-                            <div class="card-header border-0 bg-white">
-                                <img src="/static/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded shadow border-0" alt="Bonnie Avatar">
-                            </div>
-                            <div class="card-body">
-                                <span class="card-subtitle text-gray fw-normal">Marketing</span>
-                                <h3 class="h4 card-title mt-2">Bonnie Green</h3>
-                                <ul class="list-unstyled d-flex justify-content-center mt-3">
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-sm icon-facebook me-3">
-                                            <span class="fab fa-facebook-f"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-sm icon-twitter me-3">
-                                            <span class="fab fa-twitter"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="slack social link" class="icon icon-sm icon-slack me-3">
-                                            <span class="fab fa-slack-hash"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-sm icon-dribbble me-3">
-                                            <span class="fab fa-dribbble"></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0 text-center">
-                            <div class="card-header border-0 bg-white">
-                                <img src="/static/assets/img/team/profile-picture-4.jpg" class="card-img-top rounded shadow border-0" alt="Neil Avatar">
-                            </div>
-                            <div class="card-body">
-                                <span class="card-subtitle text-gray fw-normal">Invoice</span>
-                                <h3 class="h4 card-title mt-2">Neil Sims</h3>
-                                <ul class="list-unstyled d-flex justify-content-center mt-3">
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-sm icon-facebook me-3">
-                                            <span class="fab fa-facebook-f"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-sm icon-twitter me-3">
-                                            <span class="fab fa-twitter"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="slack social link" class="icon icon-sm icon-slack me-3">
-                                            <span class="fab fa-slack-hash"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-sm icon-dribbble me-3">
-                                            <span class="fab fa-dribbble"></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section -->
+  <div class="section py-0">
+    <div class="container mt-n10">
+      <div class="row">
+        <div class="col-12">
+          <iframe
+            class="map rounded"
+            id="gmap_canvas"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.6935527412!2d-74.11977387352724!3d40.697479565699915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2ske!4v1663048647391!5m2!1sen!2ske"
+            width="600"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <section class="section section-lg pt-6">
+    <div class="container">
+      <div class="row justify-content-center mb-5 mb-lg-6">
+        <div class="col-12 col-lg-8">
+          <!-- Contact Card -->
+          <div class="card border-0 p-2 p-md-3 p-lg-5">
+            <div class="card-header bg-white border-0 text-center">
+              <h2>Want to take part in something artistic?</h2>
+              <p>
+                Join our team of creative professionals, including artists &amp;
+                designers, editors, writers, and developers.
+              </p>
             </div>
-        </section>
-        <!-- End of section -->
+            <div class="card-body px-0 pt-0">
+              <form action="#">
+                <!-- Form -->
+                <div class="mb-4">
+                  <label for="name">Your Name</label>
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon3"
+                      ><span class="fas fa-user-circle"></span
+                    ></span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="e.g. Anna Jones"
+                      id="name"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- End of Form -->
+                <!-- Form -->
+                <div class="mb-4">
+                  <label for="email">Your Email</label>
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon4"
+                      ><span class="fas fa-envelope"></span
+                    ></span>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="example@gmail.com"
+                      id="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- End of Form -->
+                <div class="mb-4">
+                  <label for="message">Your Message</label>
+                  <textarea
+                    placeholder="Write your message here"
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+                <!-- End of Form -->
+                <div class="d-grid">
+                  <button type="submit" class="btn rounded btn-secondary">
+                    Send message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- End of Contact Card -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2>Our Team</h2>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="card border-0 text-center">
+            <div class="card-header border-0 bg-white">
+              <img
+                src="/static/assets/img/team/profile-picture-3.jpg"
+                class="card-img-top rounded shadow border-0"
+                alt="Christopher Avatar"
+              />
+            </div>
+            <div class="card-body">
+              <span class="card-subtitle text-gray fw-normal">Founder</span>
+              <h3 class="h4 card-title mt-2">Alison Andrea Lopez</h3>
+              <ul class="list-unstyled d-flex justify-content-center mt-3">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="twitter social link"
+                    class="icon icon-sm icon-twitter me-3"
+                  >
+                    <span class="fab fa-twitter"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="card border-0 text-center">
+            <div class="card-header border-0 bg-white">
+              <img
+                src="/static/assets/img/team/profile-picture-1.jpg"
+                class="card-img-top rounded shadow border-0"
+                alt="Bonnie Avatar"
+              />
+            </div>
+            <div class="card-body">
+              <span class="card-subtitle text-gray fw-normal"
+                >Co-Founder &amp; Developer</span
+              >
+              <h3 class="h4 card-title mt-2">Blain Muema</h3>
+              <ul class="list-unstyled d-flex justify-content-center mt-3">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="twitter social link"
+                    class="icon icon-sm icon-twitter me-3"
+                  >
+                    <span class="fab fa-twitter"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 text-center">
+            <div class="card-header border-0 bg-white">
+              <img
+                src="/static/assets/img/team/profile-picture-4.jpg"
+                class="card-img-top rounded shadow border-0"
+                alt="Neil Avatar"
+              />
+            </div>
+            <div class="card-body">
+              <span class="card-subtitle text-gray fw-normal">Editor</span>
+              <h3 class="h4 card-title mt-2">Bonnie Green</h3>
+              <ul class="list-unstyled d-flex justify-content-center mt-3">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="facebook social link"
+                    class="icon icon-sm icon-facebook me-3"
+                  >
+                    <span class="fab fa-facebook-f"></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="twitter social link"
+                    class="icon icon-sm icon-twitter me-3"
+                  >
+                    <span class="fab fa-twitter"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of section -->
+</main>
 
-    </main>
-
-    {% include 'includes/footer.html' %}
-
-{% endblock content %}
+{% include 'includes/footer.html' %} {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
-{% block javascripts %}{% endblock javascripts %}
+{% block javascripts %} window.location.reload(); {% endblock javascripts %}

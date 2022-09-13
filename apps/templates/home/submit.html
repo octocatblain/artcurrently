@@ -1,33 +1,105 @@
-{% extends "layouts/base.html" %}
-
-{% block title %} Submit a Story {% endblock %} 
+{% extends "layouts/base.html" %} {% block title %} Submit a Story {% endblock
+%}
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}{% endblock stylesheets %} {% block content %}
 
-{% block content %}
-
-    <main>
-        
-        {% include 'includes/preloader.html' %}
-
-        <!-- Hero -->
-        <section class="section-header">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-8 text-center">
-                        <h1 class="display-2 mb-3">Blank starter page</h1>
-                        <p>Hello world!</p>
-                    </div>
-                </div>
+<main>
+  {% include 'includes/preloader.html' %}
+  <!-- Hero -->
+  <section class="section section-header pb-11 bg-primary text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-8 text-center">
+          <h1 class="display-1">Submit a story</h1>
+        </div>
+        <div>
+          <div class="col-12">
+            <div class="card shadow text-center">
+              <div class="card-header bg-black border-0 pb-0">
+                <h1 class="display-3">
+                  Art Currently Magazine Submission Guidelines
+                </h1>
+                <p class="lead">
+                  Art Currently Magazine welcomes unique conversations around
+                  art and its ability to influence the world with intelligent
+                  points of view. We publish long-form features, interviews,
+                  diaries, studio visits, reviews, and opinion pieces on present
+                  and experimental discourses surrounding the art world; and
+                  about those who are shaping it.
+                </p>
+                <p class="lead">
+                  The New York-based, independent magazine covers trends and
+                  news in all five boroughs and beyond. We are accepting stories
+                  based in the US with a prominent focus on the East Coast, but
+                  open to international opening and events.
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </main>
+  <!-- Section -->
+  <section class="section section-lg pt-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h1 class="display-3">Text Guidelines</h1>
+          <p class="lead">
+            Topics must be appropriate to our times and pegged towards a
+            relevant event, artist, or exhibition.
+          </p>
+          <ul>
+            <li>News items range from 200-500 words.</li>
+            <li>
+              Interviews range between 600-800 words and must include an
+              introduction of 300-600 words plus the interview with the artist
+              in a Q &amp; A format.
+            </li>
+            <li>
+              Opinion pieces range between 800-1000 words and must present a
+              traditional format: introduction, the body of text, conclusion, or
+              call to action.
+            </li>
+          </ul>
+          <p class="lead">
+            The text must be submitted in English. Due to the nature of the art
+            world, we also accept bilingual text.
+          </p>
+          <ul>
+            <li>
+              Authors must include references (if needed) and a bibliography
+              list to prove the appropriate research process was undertaken.
+            </li>
+            <li>
+              Authors are responsible for obtaining images and publication
+              permits and having the materials ready by the estimated time of
+              publication.
+            </li>
+            <li>
+              Please send the document with the subject line
+              <em>“Submission:“Title of your Work_Name of Author.”</em>
+            </li>
+            <li>
+              For any questions regarding editorial, please email<a
+                href="mailto:
+              contact.artcurrently@gmail.com"
+              >
+                contact.artcurrently@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of section -->
+</main>
 
-    {% include 'includes/footer.html' %}
-
-{% endblock content %}
+{% include 'includes/footer.html' %} {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}{% endblock javascripts %}

@@ -1,62 +1,109 @@
-
-    <header class="header-global">
-        <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-dark">
-            <div class="container position-relative">
-                <a class="navbar-brand me-lg-5" href="./index.html">
-                    <img class="navbar-brand-dark" src="/static/assets/img/brand/light.svg" alt="Logo light">
-                    <img class="navbar-brand-light" src="/static/assets/img/brand/dark.svg" alt="Logo dark">
-                </a>
-                <div class="navbar-collapse collapse me-auto" id="navbar_global">
-                    <div class="navbar-collapse-header">
-                        <div class="row">
-                            <div class="col-6 collapse-brand">
-                                <a href="./index.html">
-                                    <img src="/static/assets/img/brand/dark.svg" alt="Themesberg logo">
-                                </a>
-                            </div>
-                            <div class="col-6 collapse-close">
-                                <a href="#navbar_global" class="fas fa-times" data-bs-toggle="collapse" data-bs-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="frontPagesDropdown" aria-expanded="false" data-bs-toggle="dropdown">
-                                Home
-                                <span class="fas fa-angle-down nav-link-arrow ms-1"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="componentsDropdown" aria-expanded="false" data-bs-toggle="dropdown">
-                                Stories
-                                <span class="fas fa-angle-down nav-link-arrow ms-1"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="/about.html" class="nav-link dropdown-toggle" id="componentsDropdown" aria-expanded="false" data-bs-toggle="dropdown">
-                                About
-                                <span class="fas fa-angle-down nav-link-arrow ms-1"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="/contact.html" class="nav-link dropdown-toggle" id="componentsDropdown" aria-expanded="false" data-bs-toggle="dropdown">
-                                Contact
-                                <span class="fas fa-angle-down nav-link-arrow ms-1"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="/submit.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="supportDropdown" aria-expanded="false">
-                                Submit a Story
-                                <span class="fas fa-angle-down nav-link-arrow ms-1"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="d-flex align-items-center">
-                    <a href="{{ url_for('authentication_blueprint.logout') }}"
-                       class="btn btn-outline-gray-100 d-none d-lg-inline me-md-3"><span class="fas fa-sign-out-alt me-2"></span> Logout</a>
-                </div>
+<header class="header-global">
+  <nav
+    id="navbar-main"
+    aria-label="Primary navigation"
+    class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-dark"
+  >
+    <div class="container position-relative">
+      <a class="navbar-brand me-lg-5" href="./index.html">
+        <img
+          class="navbar-brand-dark"
+          src="/static/assets/img/brand/light.svg"
+          alt="Logo light"
+        />
+        <img
+          class="navbar-brand-light"
+          src="/static/assets/img/brand/dark.svg"
+          alt="Logo dark"
+        />
+      </a>
+      <div class="navbar-collapse collapse me-auto" id="navbar_global">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="./index.html">
+                <img
+                  src="/static/assets/img/brand/dark.svg"
+                  alt="Themesberg logo"
+                />
+              </a>
             </div>
-        </nav>
-    </header>
+            <div class="col-6 collapse-close">
+              <a
+                href="#navbar_global"
+                class="fas fa-times"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar_global"
+                aria-controls="navbar_global"
+                aria-expanded="false"
+                title="close"
+                aria-label="Toggle navigation"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link" aria-expanded="false">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./stories.html" class="nav-link" aria-expanded="false"
+              >Stories</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link" aria-expanded="false"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link" aria-expanded="false"
+              >Contact</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./submit.html" class="nav-link" aria-expanded="false"
+              >Submit a story</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--<div class="mb-3 col-sm-5">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control border-end-0 border rounded-pill"
+            id="exampleInputIconRight"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="basic-addon2"
+          />
+          <span
+            class="input-group-text btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n55"
+            id="basic-addon2"
+            ><span class="fas fa-search"></span
+          ></span>
+        </div>
+      </div>-->
 
+      <!--<div>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>-->
+      <!-- <div class="d-flex align-items-center">
+        <a
+          href="{{ url_for('authentication_blueprint.logout') }}"
+          class="btn btn-outline-gray-100 d-none d-lg-inline me-md-3"
+          ><span class="fas fa-sign-out-alt me-2"></span> Logout</a
+        >
+      </div> -->
+    </div>
+  </nav>
+</header>

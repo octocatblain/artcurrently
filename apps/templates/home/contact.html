@@ -4,14 +4,14 @@
 {% block stylesheets %}{% endblock stylesheets %} {% block content %}
 
 <main>
-  {% include 'includes/preloader.html' %}
+  <!--{% include 'includes/preloader.html' %}-->
 
   <!-- Hero -->
-  <section class="section section-header pb-11 bg-primary text-white">
+  <section class="section section-header pb-5 bg-primary text-white">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-xl-8 text-center">
-          <h1 class="display-2 mb-3">Get in Touch.</h1>
+          <h1 class="display-2 mb-3">Get in Touch</h1>
           <p class="lead">
             We are always looking for New stories and feedback. If you are
             interested in writing for <strong>Art Currently</strong>, or for any
@@ -23,9 +23,29 @@
         </div>
       </div>
     </div>
+
+    <figure
+      class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2"
+    >
+      <svg
+        class="fill-white"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 1920 43.4"
+        style="enable-background: new 0 0 1920 43.4"
+        xml:space="preserve"
+      >
+        <path
+          d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z"
+        ></path>
+      </svg>
+    </figure>
   </section>
 
-  <!-- Section -->
+  <!-- Section 
   <div class="section py-0">
     <div class="container mt-n10">
       <div class="row">
@@ -43,20 +63,18 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 
   <!-- Section -->
-  <section class="section section-lg pt-6">
+  <section class="section section-lg pt-1">
     <div class="container">
-      <div class="row justify-content-center mb-5 mb-lg-6">
+      <div class="row justify-content-center">
         <div class="col-12 col-lg-8">
           <!-- Contact Card -->
           <div class="card border-0 p-2 p-md-3 p-lg-5">
             <div class="card-header bg-white border-0 text-center">
-              <h2>Want to take part in something artistic?</h2>
-              <p>
-                Join our team of creative professionals, including artists &amp;
-                designers, editors, writers, and developers.
+              <!--<h2>Want to take part in something artistic?</h2>-->
+              <p class="lead">Join our team of creative professionals, including artists &amp; designers, editors, writers, and developers.
               </p>
             </div>
             <div class="card-body px-0 pt-0">
@@ -115,126 +133,6 @@
             </div>
           </div>
           <!-- End of Contact Card -->
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 text-center mb-5">
-          <h2>Our Team</h2>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-          <div class="card border-0 text-center">
-            <div class="card-header border-0 bg-white">
-              <img
-                src="/static/assets/img/team/profile-picture-3.jpg"
-                class="card-img-top rounded-circle border-primary"
-                alt="Christopher Avatar"
-              />
-            </div>
-            <div class="card-body">
-              <span class="card-subtitle text-gray fw-normal">Founder</span>
-              <h3 class="h4 card-title mt-2">Alison Andrea Lopez</h3>
-              <ul class="list-unstyled d-flex justify-content-center mt-3">
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    aria-label="twitter social link"
-                    class="icon icon-sm icon-twitter me-3"
-                  >
-                    <span class="fab fa-twitter"></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    aria-label="instagram social link"
-                    class="icon-twitter me-3"
-                  >
-                    <span class="fab fa-instagram"></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-          <div class="card border-0 text-center">
-            <div class="card-header border-0 bg-white">
-              <img
-                src="/static/assets/img/team/profile-picture-1.jpg"
-                class="card-img-top rounded-circle border-primary"
-                alt="Bonnie Avatar"
-              />
-            </div>
-            <div class="card-body">
-              <span class="card-subtitle text-gray fw-normal"
-                >Co-Founder &amp; Developer</span
-              >
-              <h3 class="h4 card-title mt-2">Blain Muema</h3>
-              <ul class="list-unstyled d-flex justify-content-center mt-3">
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    aria-label="twitter social link"
-                    class="icon icon-sm icon-twitter me-3"
-                  >
-                    <span class="fab fa-twitter"></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    aria-label="instagram social link"
-                    class="icon-twitter me-3"
-                  >
-                    <span class="fab fa-instagram"></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card border-0 text-center">
-            <div class="card-header border-0 bg-white">
-              <img
-                src="/static/assets/img/team/profile-picture-4.jpg"
-                class="card-img-top rounded-circle border-primary"
-                alt="Neil Avatar"
-              />
-            </div>
-            <div class="card-body">
-              <span class="card-subtitle text-gray fw-normal">Editor</span>
-              <h3 class="h4 card-title mt-2">Bonnie Green</h3>
-              <ul class="list-unstyled d-flex justify-content-center mt-3">
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    aria-label="twitter social link"
-                    class="icon icon-sm icon-twitter me-3"
-                  >
-                    <span class="fab fa-twitter"></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    aria-label="instagram social link"
-                    class="icon-twitter me-3"
-                  >
-                    <span class="fab fa-instagram"></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </div>

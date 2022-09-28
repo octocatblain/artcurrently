@@ -2,17 +2,24 @@
 
 <!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %} {% block content %}
+<style>
+  .btn-tertiary {
+    color: #000000 !important;
+    background-color: #ffffff !important; 
+    border-color: #ffffff !important;
+    <!-- box-shadow: inset 0 1px-->}
+</style>
 
 <main>
-  {% include 'includes/preloader.html' %}
+  <!--{% include 'includes/preloader.html' %}-->
 
   <!-- Hero -->
   <section class="section-header bg-secondary text-white">
     <div class="container">
       <div class="row justify-content-between align-items-center">
-        <div class="col-12 col-md-7 col-lg-6 text-center text-md-left">
-          <h1 class="display-2 mb-4">
-            Art Currently<br class="d-none d-md-inline" />Digital Magazine
+        <div class="col-12 col-md-12 col-lg-12 text-center text-md-left">
+          <h1 class="display-3 mb-4">
+            Art Currently Digital Magazine
           </h1>
           <p class="lead mb-4 text-muted">
             <strong>Art Currently</strong> is an online publication that
@@ -21,19 +28,20 @@
             you into the ever-changing art world, and into the minds of those
             who are shaping it.
           </p>
-          <a href="./services.html" class="btn btn-tertiary me-3 animate-up-2"
+          <a href="./services.html" class="btn btn-tertiary me-3 animate-up-2" 
             >What we do
             <span class="ms-2"><span class="fas fa-arrow-right"></span></span
           ></a>
         </div>
-        <div class="col-12 col-md-5 d-none d-md-block text-center">
+        <!--<div class="col-12 col-md-5 d-none d-md-block text-center">
           <img
             src="/static/assets/img/illustrations/about-illustration.png"
             alt=""
           />
-        </div>
+        </div>-->
       </div>
     </div>
+    
     <figure
       class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2"
     >
@@ -134,7 +142,7 @@
   </section>
   <!-- End of section -->
 
-  <!-- Section -->
+  <!-- Section 
   <section class="section section-lg bg-gray-200">
     <figure
       class="position-absolute top-0 left-0 w-100 d-none d-md-block mt-n3"
@@ -165,7 +173,7 @@
         <div class="row justify-content-center">
           <div class="col-md-12 col-lg-8">
             <div class="timeline timeline-one dark px-3 px-sm-0">
-              <!-- Timeline Item 1 -->
+              <!-- Timeline Item 1 
               <div class="timeline-item">
                 <h3 class="h4 mb-4">Present</h3>
                 <p>
@@ -175,7 +183,7 @@
                   ever-changing landscape.
                 </p>
               </div>
-              <!--Timeline Item 2-->
+              <!--Timeline Item 2
               <div class="timeline-item">
                 <h3 class="h4 mb-4">November 2021</h3>
                 <!--<div class="my-3">
@@ -191,10 +199,10 @@
                   <span class="icon icon-sm icon-danger"
                     ><span class="fab fa-angular"></span
                   ></span>
-                </div>-->
+                </div>
                 <p>Art Master Magazine rebrands to Art Currently.</p>
               </div>
-              <!--Timeline Item 3 -->
+              <!--Timeline Item 3 
               <div class="timeline-item">
                 <h3 class="h4 mb-4">May 2020</h3>
                 <img
@@ -224,7 +232,7 @@
                   alt="signature"
                   width="100"
                 />
-              </div> -->
+              </div> 
             </div>
           </div>
         </div>
@@ -249,10 +257,10 @@
         ></path>
       </svg>
     </figure>
-  </section>
+  </section> -->
 
   <!-- Section -->
-  <section class="section section-lg">
+  <section class="section section-lg bg-gray-200">
     <div class="container">
       <div class="row mb-5 mb-lg-6">
         <div class="col-12 col-md-9 col-lg-8 text-center mx-auto">
@@ -324,7 +332,7 @@
             <div class="card-body">
               <h3 class="h4 card-title mb-2">Blain Muema</h3>
               <span class="card-subtitle text-gray fw-normal"
-                >Co-Founder &amp; Developer</span
+                >Writer &amp; Developer</span
               >
               <p class="card-text my-3">
                 Blain is a Kenyan-born Software Developer and Writer who
@@ -406,8 +414,8 @@
   <!-- End of section -->
 </main>
 
-<section class="section py-0">
-  <div class="container z-2">
+<section class="section py-0 ">
+  <div class="container z-2 ">
     <div class="row position-relative justify-content-center align-items-cente">
       <div class="col-12">
         <!-- Card -->

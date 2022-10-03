@@ -1,0 +1,107 @@
+{% extends "layouts/base.html" %} {% block title %} Stories{% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %} {% block content %}
+<style>
+    .card-img-overlay {
+        padding: 3rem !important;
+        flex: 1 1 auto;
+        padding: 1.25rem 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .post-date {
+        text-align: center;
+    }
+</style>
+
+<main>
+    <!--{% include 'includes/preloader.html' %}-->
+
+    <!-- Hero -->
+    <section class="section section-header pb-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 text-center">
+                    <h1 class="display-3 mb-4">
+                        Stories
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--end of hero section-->
+    <section class="section section-sm bg-white pt-5 pt-lg-6 text-black">
+        <div class="container">
+            <div class="row">
+                <!--story 1-->
+                <div class="col-12 col-lg-12 mb-6">
+                    <h3 class="h4 card-title text-center mb-3">90% of content gets no traffic from Google. How to
+                        improve your organic search traffic</h3>
+                    <div class="post-date"><span class="card-text small"><span
+                                class="far fa-calendar-alt me-2"></span>15
+                            October
+                            2022</span></div>
+                    <p class="lead mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci debitis
+                        reprehenderit assumenda atque. Consequatur corrupti molestias numquam iste veritatis voluptates
+                        libero optio possimus assumenda, in eos ab consectetur est corporis!</p>
+                    <div class="d-flex align-items-center">
+                        <a href="./story.html" class="btn btn-tertiary btn-sm me-3">Learn More</a>
+                        <a href="#" class="small"><span class="far fa-comments me-2"></span>20</a>
+                    </div>
+                </div>
+                <!-- story 2-->
+                <div class="col-12 col-lg-12 mb-6">
+                    <h3 class="h4 card-title text-center mb-3">We partnered up with Google</h3>
+                    <div class="post-date"><span class="card-text small"><span
+                                class="far fa-calendar-alt me-2"></span>10
+                            October
+                            2022</span></div>
+                    <p class="lead mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam cumque
+                        commodi inventore et dolor, aspernatur repellat laudantium eaque sint non omnis temporibus esse
+                        ratione quo tempora culpa debitis pariatur?</p>
+                    <div class="d-flex align-items-center">
+                        <a href="./story.html" class="btn btn-tertiary btn-sm me-3">Learn More</a>
+                        <a href="#" class="small"><span class="far fa-comments me-2"></span>12</a>
+                    </div>
+                </div>
+                <!--story 3-->
+                <div class="col-12 col-lg-12 mb-6">
+                    <h3 class="h4 card-title text-center mb-3">An Interview with Maggie Hambling</h3>
+                    <div class="post-date"><span class="card-text small"><span class="far fa-calendar-alt me-2"></span>5
+                            October
+                            2022</span></div>
+                    <p class="lead mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore inventore
+                        accusantium dolore, officia aliquam alias nemo perferendis! Maxime at cumque minima rerum enim
+                        eligendi adipisci? Veniam perspiciatis deserunt dicta ea.</p>
+                    <div class="d-flex align-items-center">
+                        <a href="./story.html" class="btn btn-tertiary btn-sm me-3">Learn More</a>
+                        <a href="#" class="small"><span class="far fa-comments me-2"></span>32</a>
+                    </div>
+                </div>
+                <!--paging-->
+                <div class="col-12">
+                    <div class="d-flex justify-content-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"> <a class="page-link" href="#">Previous</a> </li>
+                                <li class="page-item active"> <a class="page-link" href="#">1</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">4</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">5</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">Next</a> </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% include 'includes/footer.html' %} {% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

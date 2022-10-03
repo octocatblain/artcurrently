@@ -3,12 +3,18 @@
 <!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %} {% block content %}
 <style>
-  .section-header {
-    padding-bottom: 6rem !important;
+  @media (min-width: 992px) {
+    .mt-lg-n11 {
+      margin-top: -20rem !important;
+    }
+
+    .mt-n8 {
+      margin-top: -20rem !important;
+    }
   }
-  .hero-container {
-    margin-left: 6rem !important;
-    margin-right: 6rem !important;
+
+  .section-lg {
+    padding-bottom: 0rem !important;
   }
 </style>
 
@@ -16,112 +22,92 @@
   <!--{% include 'includes/preloader.html' %}-->
 
   <!-- Hero -->
-  <section class="section-header bg-secondary text-white">
-    <div class="container">
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-        <!--<ol class="carousel-indicators">
-          <li
-            data-target="#carouselIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselIndicators" data-slide-to="2"></li>
-        </ol>-->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="/static/assets/img/carousel/image-1.jpg"
-              class="d-block w-100"
-              alt="slide1"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First Title</h5>
-            </div>
-          </div>
+  <section class="section-header pb-10 pb-lg-11 mb-4 mb-lg-6 bg-primary"> </section>
+  <!--end of hero section-->
 
-          <div class="carousel-item">
-            <img
-              src="/static/assets/img/carousel/image-2.jpg"
-              class="d-block w-100"
-              alt="slide2"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second Title</h5>
-            </div>
-          </div>
+  <!--carousel section-->
+  <section class="section section-lg pt-1">
+    <div class="row">
+      <div class="col-6 col-lg-6 col-md-4 col-sm-2">
+        <div class="container mt-n8 mt-lg-n11 z-2">
+          <div id="carousel" class="glide--ltr glide--carousel glide--swipeable" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="/static/assets/img/carousel/image-1.jpg" class="d-block w-100" alt="slide1" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First Title</h5>
+                </div>
+              </div>
 
-          <div class="carousel-item">
-            <img
-              src="/static/assets/img/carousel/image-3.jpg"
-              class="d-block w-100"
-              alt="slide3"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third Title</h5>
+              <div class="carousel-item">
+                <img src="/static/assets/img/carousel/image-2.jpg" class="d-block w-100" alt="slide2" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second Title</h5>
+                </div>
+              </div>
+
+              <div class="carousel-item active">
+                <img src="/static/assets/img/carousel/image-3.jpg" class="d-block w-100" alt="slide3" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third Title</h5>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      </div>
+      <div class="col-6 col-lg-6 col-md-4 col-sm-2">
+        <div class="container mt-n8 mt-lg-n11 z-2">
+          <div id="carousel" class="glide--ltr glide--carousel glide--swipeable" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/static/assets/img/carousel/image-1.jpg" class="d-block w-100" alt="slide1" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First Title</h5>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="/static/assets/img/carousel/image-2.jpg" class="d-block w-100" alt="slide2" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second Title</h5>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="/static/assets/img/carousel/image-3.jpg" class="d-block w-100" alt="slide3" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third Title</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    </div>
   </section>
-  <!--end of hero section-->
+  <!--end of carousel-->
 
   <!--Featured stories section-->
-  <section class="section section-md">
+  <section class="section section-md pt-5">
     <div class="container">
       <h1 class="display-3">Featured Stories</h1>
       <div class="row">
         <div class="col-12 col-sm-6 col-xl-4 mb-5 mb-lg-0">
           <div class="card border-light">
-            <img
-              src="/static/assets/img/blog/image-1.jpg"
-              class="card-img-top rounded-top"
-              alt="image"
-            />
+            <img src="/static/assets/img/blog/image-1.jpg" class="card-img-top" alt="image" />
             <div class="card-body">
-              <div
-                class="media d-flex align-items-center justify-content-between"
-              >
+              <div class="media d-flex align-items-center justify-content-between">
                 <div class="post-group">
-                  <a
-                    href="./profile.html"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title=""
-                    data-original-title="23k followers"
-                  >
-                    <img
-                      class="avatar-sm mr-2 img-fluid rounded-circle"
-                      src="/static/assets/img/team/profile-picture-1.jpg"
-                      alt="avatar"
-                    />
+                  <a href="./profile.html" data-toggle="tooltip" data-placement="top" title=""
+                    data-original-title="23k followers">
                     Jo J. Moore
                   </a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <span class="small"
-                    ><i class="far fa-calendar-alt mr-2"></i>25 September
-                    2022</span
-                  >
+                  <span class="small"><i class="far fa-calendar-alt mr-2"></i>25 September
+                    2022</span>
                 </div>
               </div>
               <h5 class="card-title mt-4">A Look at the MET</h5>
@@ -136,36 +122,18 @@
 
         <div class="col-12 col-sm-6 col-xl-4 mb-5 mb-lg-0">
           <div class="card border-light">
-            <img
-              src="/static/assets/img/blog/image-2.jpg"
-              class="card-img-top rounded-top"
-              alt="image"
-            />
+            <img src="/static/assets/img/blog/image-2.jpg" class="card-img-top" alt="image" />
             <div class="card-body">
-              <div
-                class="media d-flex align-items-center justify-content-between"
-              >
+              <div class="media d-flex align-items-center justify-content-between">
                 <div class="post-group">
-                  <a
-                    href="./profile.html"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title=""
-                    data-original-title="50k followers"
-                  >
-                    <img
-                      class="avatar-sm mr-2 img-fluid rounded-circle"
-                      src="/static/assets/img/team/profile-picture-2.jpg"
-                      alt="avatar"
-                    />
+                  <a href="./profile.html" data-toggle="tooltip" data-placement="top" title=""
+                    data-original-title="50k followers">
                     Anna Smith
                   </a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <span class="small"
-                    ><i class="far fa-calendar-alt mr-2"></i>15 September
-                    2022</span
-                  >
+                  <span class="small"><i class="far fa-calendar-alt mr-2"></i>15 September
+                    2022</span>
                 </div>
               </div>
               <h5 class="card-title mt-4">We partnered up with Ildiesign</h5>
@@ -180,36 +148,18 @@
 
         <div class="col-12 col-sm-6 col-xl-4 mb-5 mb-lg-0">
           <div class="card border-light">
-            <img
-              src="/static/assets/img/blog/image-3.jpg"
-              class="card-img-top rounded-top"
-              alt="image"
-            />
+            <img src="/static/assets/img/blog/image-3.jpg" class="card-img-top" alt="image" />
             <div class="card-body">
-              <div
-                class="media d-flex align-items-center justify-content-between"
-              >
+              <div class="media d-flex align-items-center justify-content-between">
                 <div class="post-group">
-                  <a
-                    href="./profile.html"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title=""
-                    data-original-title="23k followers"
-                  >
-                    <img
-                      class="avatar-sm mr-2 img-fluid rounded-circle"
-                      src="/static/assets/img/team/profile-picture-3.jpg"
-                      alt="avatar"
-                    />
+                  <a href="./profile.html" data-toggle="tooltip" data-placement="top" title=""
+                    data-original-title="23k followers">
                     Ariba Tamara
                   </a>
                 </div>
                 <div class="d-flex align-items-center">
-                  <span class="small"
-                    ><i class="far fa-calendar-alt mr-2"></i>5 September
-                    2022</span
-                  >
+                  <span class="small"><i class="far fa-calendar-alt mr-2"></i>5 September
+                    2022</span>
                 </div>
               </div>
               <h5 class="card-title mt-4">New Paintings by NY artist</h5>
@@ -226,133 +176,27 @@
   </section>
   <!-- end of featured section-->
 
-  <!--newletter section-->
-  <section class="section section-md bg-secondary">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="card border-light px-4 py-5 text-center">
-            <div class="card-header bg-white pb-0">
-              <h2 class="h1 mb-3">Get the most out of your network.</h2>
-            </div>
-            <div class="card-body pt-2 px-0 px-lg-7">
-              <p class="mb-5 lead">
-                Contact management designed for teams and individuals
-              </p>
-              <div class="row justify-content-center">
-                <div class="col-12">
-                  <div class="form-group">
-                    <div class="d-flex flex-row justify-content-center">
-                      <div class="input-group">
-                        <input
-                          class="form-control form-control-xl border-light"
-                          placeholder="Your email address"
-                          type="email"
-                        />
-                        <div class="input-group-prepend">
-                          <button
-                            type="submit"
-                            class="btn btn-primary rounded-right"
-                          >
-                            Subscribe
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--end of newsletter section-->
   <!--culture section-->
-  <section class="section section-md">
+  <section class="section section-md bg-gray-200">
     <div class="container">
-      <h1 class="display-3">More Stories</h1>
+      <h1 class="display-3">Artist Interviews</h1>
       <div class="row">
         <div class="col-12 col-xl-4 mb-5 mb-lg-0">
           <div class="card border-light p-2 p-md-4">
-            <div class="card-header rounded">
-              <div class="post-meta">
-                <div
-                  class="media d-flex align-items-center justify-content-between"
-                >
-                  <div class="post-group">
-                    <a
-                      href="./profile.html"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="23k followers"
-                      data-original-title="23k followers"
-                    >
-                      <img
-                        class="avatar-sm mr-2 img-fluid rounded-circle"
-                        src="/static/assets/img/team/profile-picture-2.jpg"
-                        alt="avatar"
-                      />
-                      techhub
-                    </a>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="author-name text-secondary font-small mr-4 d-none d-lg-block"
-                    >
-                      Posted by
-                      <a href="./profile.html" class="mr-2">roberttanislav</a>
-                    </div>
-                    <div class="btn-group">
-                      <button
-                        class="btn btn-link dropdown-toggle dropdown-toggle-split m-0 p-0"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        <span class="icon icon-sm">
-                          <i class="fas fa-ellipsis-h icon-secondary"></i>
-                        </span>
-                        <span class="sr-only">Toggle Dropdown</span>
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"
-                          ><i class="fas fa-edit mr-2"></i> Edit post</a
-                        >
-                        <a class="dropdown-item text-danger" href="#"
-                          ><i class="fa fa-trash mr-2" aria-hidden="true"></i>
-                          Delete post</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="card-body py-4 px-0">
               <a href="./single-post-left-sidebar.html">
-                <img
-                  src="/static/assets/img/blog/image-1.jpg"
-                  class="card-img-top rounded"
-                  alt="image"
-                />
-                <h4 class="my-4">
-                  List of public corporations by market capitalization
+                <img src="/static/assets/img/blog/image-1.jpg" class="card-img-top" alt="image" />
+                <h4 class="my-4">Maggi Hambling
                 </h4>
               </a>
               <p class="card-text mb-4">
-                All of the world's 10 largest companies as measured by market
-                capitalization are American. Market capitalization is the total
-                value of a company's entire purchased shares of stock. While
-                these companies have their roots in the U.S. and are the
-                embodiment of ...
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit consequuntur non omnis quis
+                delectus eius, tempore ipsam quia esse aliquid placeat eos cum temporibus tenetur provident voluptas
+                ipsum consectetur.
               </p>
             </div>
             <div class="card-footer bg-white pt-0 px-0">
-              <div
-                class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between"
-              >
+              <div class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between">
                 <div class="post-details mb-3 mb-lg-0">
                   <button class="btn btn-sm btn-primary animate-hover mr-2">
                     <span class="fas fa-arrow-up mr-2 animate-up-2"></span>
@@ -375,83 +219,20 @@
 
         <div class="col-12 col-xl-4 mb-5 mb-lg-0">
           <div class="card border-light p-2 p-md-4">
-            <div class="card-header rounded">
-              <div class="post-meta">
-                <div
-                  class="media d-flex align-items-center justify-content-between"
-                >
-                  <div class="post-group">
-                    <a
-                      href="./profile.html"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="23k followers"
-                      data-original-title="23k followers"
-                    >
-                      <img
-                        class="avatar-sm mr-2 img-fluid rounded-circle"
-                        src="/static/assets/img/team/profile-picture-2.jpg"
-                        alt="avatar"
-                      />
-                      techhub
-                    </a>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="author-name text-secondary font-small mr-4 d-none d-lg-block"
-                    >
-                      Posted by
-                      <a href="./profile.html" class="mr-2">roberttanislav</a>
-                    </div>
-                    <div class="btn-group">
-                      <button
-                        class="btn btn-link dropdown-toggle dropdown-toggle-split m-0 p-0"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        <span class="icon icon-sm">
-                          <i class="fas fa-ellipsis-h icon-secondary"></i>
-                        </span>
-                        <span class="sr-only">Toggle Dropdown</span>
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"
-                          ><i class="fas fa-edit mr-2"></i> Edit post</a
-                        >
-                        <a class="dropdown-item text-danger" href="#"
-                          ><i class="fa fa-trash mr-2" aria-hidden="true"></i>
-                          Delete post</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="card-body py-4 px-0">
               <a href="./single-post-left-sidebar.html">
-                <img
-                  src="/static/assets/img/blog/image-2.jpg"
-                  class="card-img-top rounded"
-                  alt="image"
-                />
+                <img src="/static/assets/img/blog/image-2.jpg" class="card-img-top" alt="image" />
                 <h4 class="my-4">
                   List of public corporations by market capitalization
                 </h4>
               </a>
-              <p class="card-text mb-4">
-                All of the world's 10 largest companies as measured by market
-                capitalization are American. Market capitalization is the total
-                value of a company's entire purchased shares of stock. While
-                these companies have their roots in the U.S. and are the
-                embodiment of ...
+              <p class="card-text mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed dignissimos quod
+                maxime consequatur magni commodi quos? Cum et vel, voluptatibus vero tenetur consequatur, aspernatur
+                dignissimos quia mollitia perferendis, doloribus deleniti.
               </p>
             </div>
             <div class="card-footer bg-white pt-0 px-0">
-              <div
-                class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between"
-              >
+              <div class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between">
                 <div class="post-details mb-3 mb-lg-0">
                   <button class="btn btn-sm btn-primary animate-hover mr-2">
                     <span class="fas fa-arrow-up mr-2 animate-up-2"></span>
@@ -474,83 +255,20 @@
 
         <div class="col-12 col-xl-4 mb-5 mb-lg-0">
           <div class="card border-light p-2 p-md-4">
-            <div class="card-header rounded">
-              <div class="post-meta">
-                <div
-                  class="media d-flex align-items-center justify-content-between"
-                >
-                  <div class="post-group">
-                    <a
-                      href="./profile.html"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="23k followers"
-                      data-original-title="23k followers"
-                    >
-                      <img
-                        class="avatar-sm mr-2 img-fluid rounded-circle"
-                        src="/static/assets/img/team/profile-picture-2.jpg"
-                        alt="avatar"
-                      />
-                      techhub
-                    </a>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="author-name text-secondary font-small mr-4 d-none d-lg-block"
-                    >
-                      Posted by
-                      <a href="./profile.html" class="mr-2">roberttanislav</a>
-                    </div>
-                    <div class="btn-group">
-                      <button
-                        class="btn btn-link dropdown-toggle dropdown-toggle-split m-0 p-0"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        <span class="icon icon-sm">
-                          <i class="fas fa-ellipsis-h icon-secondary"></i>
-                        </span>
-                        <span class="sr-only">Toggle Dropdown</span>
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"
-                          ><i class="fas fa-edit mr-2"></i> Edit post</a
-                        >
-                        <a class="dropdown-item text-danger" href="#"
-                          ><i class="fa fa-trash mr-2" aria-hidden="true"></i>
-                          Delete post</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="card-body py-4 px-0">
               <a href="./single-post-left-sidebar.html">
-                <img
-                  src="/static/assets/img/blog/image-1.jpg"
-                  class="card-img-top rounded"
-                  alt="image"
-                />
+                <img src="/static/assets/img/blog/image-1.jpg" class="card-img-top" alt="image" />
                 <h4 class="my-4">
                   List of public corporations by market capitalization
                 </h4>
               </a>
-              <p class="card-text mb-4">
-                All of the world's 10 largest companies as measured by market
-                capitalization are American. Market capitalization is the total
-                value of a company's entire purchased shares of stock. While
-                these companies have their roots in the U.S. and are the
-                embodiment of ...
+              <p class="card-text mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias tempore
+                dignissimos iste fuga quos nesciunt non officia voluptas? Blanditiis error incidunt repellendus vitae
+                ducimus quod nihil itaque, molestias laboriosam. Vero.
               </p>
             </div>
             <div class="card-footer bg-white pt-0 px-0">
-              <div
-                class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between"
-              >
+              <div class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between">
                 <div class="post-details mb-3 mb-lg-0">
                   <button class="btn btn-sm btn-primary animate-hover mr-2">
                     <span class="fas fa-arrow-up mr-2 animate-up-2"></span>

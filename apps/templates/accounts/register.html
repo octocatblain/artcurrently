@@ -9,6 +9,8 @@
 
 <main>
 
+
+
     <!-- Section -->
     <section class="min-vh-100 d-flex align-items-center section-image overlay-soft-dark"
         data-background="/static/assets/img/pages/form-image.jpg">
@@ -19,19 +21,27 @@
                         class="signin-inner my-4 my-lg-0 bg-white shadow-soft border rounded border-gray-300 p-4 p-lg-5 w-100 fmxw-500">
                         <div class="text-center text-md-center mb-4 mt-md-0">
                             <h1 class="mb-0 h3">
-                                <a href="https://artcurrently.com" target="_blank">Art Currently</a> - Register
+                                <a href="https://appseed.us/product/pixel-bootstrap/flask/" target="_blank">Flask Pixel
+                                    UI</a> - Register
                             </h1>
                             <br />
                             <span class="font-weight-normal">
                                 {% if msg %}
-                                {{ msg | safe }}
+                                <span class="text-danger">{{ msg | safe }}</span>
                                 {% else %}
                                 Add your credentials
                                 {% endif %}
                             </span>
                         </div>
 
-                        {% if not success %}
+                        {% if success %}
+
+                        <p class="mt-4 text-sm text-center">
+                            <a href="{{ url_for('authentication_blueprint.login') }}" class="btn btn-primary">Sign
+                                IN</a>
+                        </p>
+
+                        {% else %}
 
                         <form method="post" action="" action="#">
 
@@ -70,8 +80,7 @@
                                     <div class="form-check mb-0">
                                         <input class="form-check-input" type="checkbox" value="" id="remember">
                                         <label class="form-check-label mb-0" for="remember">
-                                            I agree to <a class="fw-bold text-underline" href="#">Terms &amp;
-                                                Conditions</a>.
+                                            Agree <a class="fw-bold text-underline" href="#">Terms</a>
                                         </label>
                                     </div>
                                     <div><a href="{{ url_for('authentication_blueprint.login') }}"
@@ -83,21 +92,14 @@
                             </div>
                         </form>
 
-                        {% else %}
-
-                        <p class="mt-4 text-sm text-center">
-                            <a href="{{ url_for('authentication_blueprint.login') }}" class="btn btn-primary">Sign
-                                IN</a>
-                        </p>
-
                         {% endif %}
 
                         <br />
 
                         <div class="d-flex justify-content-center align-items-center mt-4">
                             <span class="fw-normal">
-                                <a href="https://artcurrently.com" target="_blank" class="fw-bold text-underline">Art
-                                    Currently - 2022</a>
+                                &copy; Themesberg - coded by
+                                <a href="https://appseed.us" target="_blank" class="fw-bold text-underline">AppSeed</a>
                             </span>
                         </div>
 

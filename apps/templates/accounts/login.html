@@ -3,16 +3,29 @@
 {% block title %} Sign IN {% endblock %}
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+<style>
+    .btn-tertiary {
+        color: #000000 !important;
+        background-color: #ffffff !important;
+        border-color: #ffffff !important;
+        /* box-shadow: inset 0 1px*/
+    }
+
+    * {
+        border-radius: 0 !important;
+    }
+</style>
+{% endblock stylesheets %}
 
 {% block content %}
+
 
 <main>
 
 
     <!-- Section -->
-    <section class="min-vh-100 d-flex align-items-center section-image overlay-soft-dark"
-        data-background="/static/assets/img/pages/form-image.jpg">
+    <section class="min-vh-100 d-flex align-items-center section-image overlay-soft-dark">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 d-flex align-items-center justify-content-center">
@@ -20,12 +33,13 @@
                         class="signin-inner my-4 my-lg-0 bg-white shadow-soft border rounded border-gray-300 p-4 p-lg-5 w-100 fmxw-500">
                         <div class="text-center text-md-center mb-4 mt-md-0">
                             <h1 class="mb-0 h3">
-                                <a href="https://artcurrently.com" target="_blank">Art Currently</a> - Login
+                                <a href="https://appseed.us/product/pixel-bootstrap/flask/" target="_blank">Admin
+                                    Dashboard</a> - Login
                             </h1>
                             <br />
                             <span class="font-weight-normal">
                                 {% if msg %}
-                                {{ msg | safe }}
+                                <span class="text-danger">{{ msg | safe }}</span>
                                 {% else %}
                                 Add your credentials
                                 {% endif %}
@@ -75,9 +89,8 @@
                         <br />
 
                         <div class="d-flex justify-content-center align-items-center mt-4">
-                            <span class="fw-normal">
-                                <a href="https://artcurrently.com" target="_blank" class="fw-bold text-underline">Art
-                                    Currently - 2022</a>
+                            <a href="https://artcurrently.com" target="_blank" class="fw-bold text-underline">Art
+                                Currently</a>
                             </span>
                         </div>
                     </div>
